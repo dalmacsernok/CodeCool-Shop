@@ -1,0 +1,21 @@
+2022-06-30 10:24:22.245 +02:00 [ERR] Something went wrong :(
+System.Runtime.CompilerServices.RuntimeWrappedException: An object that does not derive from System.Exception has been wrapped in a RuntimeWrappedException.
+   at Codecool.CodecoolShop.Daos.Implementations.GenreDaoMemory.Get(Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\GenreDaoMemory.cs:line 74
+   at Codecool.CodecoolShop.Services.ProductService.GetProductsForCategory(Int32 categoryId) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 34
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 50
+2022-06-30 10:26:09.311 +02:00 [ERR] Something went wrong :(
+System.Runtime.CompilerServices.RuntimeWrappedException: An object that does not derive from System.Exception has been wrapped in a RuntimeWrappedException.
+   at Codecool.CodecoolShop.Daos.Implementations.GenreDaoMemory.Get(Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\GenreDaoMemory.cs:line 74
+   at Codecool.CodecoolShop.Services.ProductService.GetProductsForCategory(Int32 categoryId) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 34
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 50
+2022-06-30 10:27:03.214 +02:00 [ERR] Something went wrong :(
+System.Runtime.CompilerServices.RuntimeWrappedException: An object that does not derive from System.Exception has been wrapped in a RuntimeWrappedException.
+   at Codecool.CodecoolShop.Daos.Implementations.GenreDaoMemory.Get(Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\GenreDaoMemory.cs:line 74
+   at Codecool.CodecoolShop.Services.ProductService.GetProductsForCategory(Int32 categoryId) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 34
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 50
+2022-06-30 10:44:36.994 +02:00 [ERR] Something went wrong :(
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Daos.Implementations.ProductDaoMemory.<>c__DisplayClass9_0.<GetBy>b__0(Product x) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\ProductDaoMemory.cs:line 56
+   at System.Linq.Enumerable.WhereListIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 49

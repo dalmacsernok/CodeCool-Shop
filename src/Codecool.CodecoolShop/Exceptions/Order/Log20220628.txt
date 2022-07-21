@@ -1,0 +1,57 @@
+2022-06-28 13:54:30.983 +02:00 [ERR] Something went wrong :S
+Newtonsoft.Json.JsonReaderException: Input string '3A3280.0' is not a valid number. Path '', line 1, position 8.
+   at Newtonsoft.Json.JsonTextReader.ParseReadNumber(ReadType readType, Char firstChar, Int32 initialPosition)
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Codecool.CodecoolShop.Controllers.OrderController.AddToCart(String data, String filter, Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 40
+2022-06-28 13:58:59.251 +02:00 [ERR] Something went wrong :S
+Newtonsoft.Json.JsonReaderException: Input string '3A3280.0' is not a valid number. Path '', line 1, position 8.
+   at Newtonsoft.Json.JsonTextReader.ParseReadNumber(ReadType readType, Char firstChar, Int32 initialPosition)
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Codecool.CodecoolShop.Controllers.OrderController.AddToCart(String data, String filter, Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 40
+2022-06-28 14:02:32.932 +02:00 [ERR] Something went wrong :'(
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.IncreaseProductQuantity(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 55
+   at Codecool.CodecoolShop.Controllers.OrderController.ChangeQuantity(String filter, Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 89
+2022-06-28 14:07:01.794 +02:00 [ERR] SWW
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.DeleteItem(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 63
+   at Codecool.CodecoolShop.Controllers.OrderController.DeleteItem(Int32 deleteid) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 108
+2022-06-28 14:07:50.981 +02:00 [ERR] SWW
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.DeleteItem(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 63
+   at Codecool.CodecoolShop.Controllers.OrderController.DeleteItem(Int32 deleteid) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 108
+2022-06-28 14:09:48.048 +02:00 [ERR] SWW
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.DeleteItem(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 63
+   at Codecool.CodecoolShop.Controllers.OrderController.DeleteItem(Int32 deleteid) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 108
+2022-06-28 14:12:19.543 +02:00 [ERR] nemjó
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.GetOrder(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 72
+   at Codecool.CodecoolShop.Controllers.OrderController.CheckOut(Int32 orderId) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 124
+2022-06-28 14:19:14.547 +02:00 [ERR] nemjó
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.GetOrder(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 72
+   at Codecool.CodecoolShop.Controllers.OrderController.CheckOut(Int32 orderId) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 125
+2022-06-28 14:19:42.361 +02:00 [ERR] shame
+System.IO.IOException: I/O error occurred.
+   at Codecool.CodecoolShop.Controllers.OrderController.StoreUserData(UserData userData, Int32 orderId) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 152
+2022-06-28 14:22:18.698 +02:00 [ERR] no pay
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.GetOrder(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 72
+   at Codecool.CodecoolShop.Controllers.OrderController.Payment(Int32 orderId) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 170

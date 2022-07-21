@@ -1,0 +1,32 @@
+@using Newtonsoft.Json
+@model List<Codecool.CodecoolShop.Models.Product>
+
+@{
+    string filter = (string) ViewData["filter"];
+    int id = (int) ViewData["id"];
+    ViewData["Title"] = filter == "Category" ? Model[0].Genre.Name : Model[0].Publisher.Name;
+}
+
+<div class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    @foreach (var element in Model)
+    {
+        
+        string data = JsonConvert.SerializeObject(element);
+
+        <div class="col-lg-3 col-lg-3" style="min-height: 350px; min-width: 350px">
+            <div class="card">
+                <img src="/img/@(element.Name).jpg" style="height: 50%; width: 50%; align-self: center; padding-top: 10px">
+                <div class="card-body">
+                    <h5 class="card-title">@element.Author - @element.Name</h5>
+                    <p class="card-text">@element.Description.</p>
+                    <p class="card-text">Category: @element.Genre.Name</p>
+                    <p class="card-text">Publisher: @element.Publisher.Name</p>
+                    <p class="card-text text-center"><strong>Price: @element.DefaultPrice.ToString("N0") @element.Currency</strong></p>
+                    <a asp-controller="Order" asp-action="AddToCart" asp-route-data="@data" asp-route-filter="@filter" asp-route-id="@id" type="button" class="btn btn-primary" style="float: bottom">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>

@@ -1,0 +1,28 @@
+﻿@model Payment
+
+@{
+    ViewData["Title"] = "Payment";
+    var totalPrice = (decimal) ViewData["totalPrice"];
+    var orderId = (int) ViewData["OrderId"];
+}
+
+
+<div>
+    Cost of your order: @totalPrice.ToString("N0") HUF
+</div>
+
+<form method="post" asp-controller="Order" asp-action="OrderConfirmation" asp-route-orderId="@orderId">
+    <div class="form-group">
+        <input asp-for="CardNumber" type="text" class="form-control" placeholder="Enter your card number" required>
+    </div>
+    <div class="form-group">
+        <input asp-for="CardHolder" type="text" class="form-control" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+        <input asp-for="ExpiryDate" type="text" class="form-control" placeholder="Enter the expiry date" required>
+    </div>
+    <div class="form-group">
+        <input asp-for="CVVCode" min="100" max="999" type="number" class="form-control" placeholder="Enter your CVV Code" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay</button>
+</form>

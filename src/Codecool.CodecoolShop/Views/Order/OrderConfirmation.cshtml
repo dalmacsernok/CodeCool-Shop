@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Order Confirmation";
+    var order = (Order)ViewData["order"];
+}
+
+<h1>Your payment was successfull!</h1>
+
+<p>Your name: @order.CustomerData.Name</p>
+<p>Your shipping address: @order.CustomerData.ShippingAddress.Address</p>
+<p>Ordered items</p>
+@foreach(var item in order.Cart) {
+    <p>@item.Product.Name</p>
+}
+<p>Total price: @order.Cart.Sum(lineitem=>lineitem.Product.DefaultPrice * lineitem.Quantity).ToString("N0") HUF</p>

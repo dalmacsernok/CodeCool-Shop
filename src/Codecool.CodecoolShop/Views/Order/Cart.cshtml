@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Cart";
+    var order = (Order)ViewData["order"];
+    var totalprice = (decimal)ViewData["totalPrice"];
+}
+
+<div class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <h2>Cart</h2>
+
+    <table class="table">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">UnitPrice</th>
+            <th scope="col">SubTotalPrice</th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in order.Cart)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>
+                    <a asp-controller="Order" asp-action="ChangeQuantity" asp-route-filter="minus" asp-route-id="@item.Id" style="text-decoration: none">🔽</a>
+                    @item.Quantity
+                    <a asp-controller="Order" asp-action="ChangeQuantity" asp-route-filter="plus" asp-route-id="@item.Id" style="text-decoration: none">🔼</a>
+                </td>
+                <td>@item.Product.DefaultPrice.ToString("N0") @item.Product.Currency</td>
+                <td>@((item.Product.DefaultPrice * item.Quantity).ToString("N0")) @item.Product.Currency</td>
+                <td><a asp-controller="Order" asp-action="DeleteItem" asp-route-deleteid="@item.Id" style="text-decoration: none">❌</a></td>
+            </tr>
+        }
+    </table>
+
+</div>
+<div>
+    Total Price: @totalprice.ToString("N0") HUF
+</div>
+<div>
+    <form asp-controller="Order" asp-action="CheckOut" asp-route-orderId="@order.Id"><button class="btn btn-primary">Checkout</button></form>
+</div>

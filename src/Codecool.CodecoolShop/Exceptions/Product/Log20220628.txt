@@ -1,0 +1,12 @@
+2022-06-28 13:44:46.632 +02:00 [ERR] Something went wrong :(
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Daos.Implementations.ProductDaoMemory.<>c__DisplayClass9_0.<GetBy>b__0(Product x) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\ProductDaoMemory.cs:line 56
+   at System.Linq.Enumerable.WhereListIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 45
+2022-06-28 13:52:11.637 +02:00 [ERR] Something went wrong :(
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Daos.Implementations.ProductDaoMemory.<>c__DisplayClass9_0.<GetBy>b__0(Product x) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\ProductDaoMemory.cs:line 56
+   at System.Linq.Enumerable.WhereListIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 45

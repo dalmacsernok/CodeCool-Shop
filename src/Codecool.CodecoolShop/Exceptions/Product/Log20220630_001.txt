@@ -1,0 +1,22 @@
+2022-06-30 10:44:53.938 +02:00 [ERR] Something went wrong :(
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Daos.Implementations.ProductDaoMemory.<>c__DisplayClass9_0.<GetBy>b__0(Product x) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\ProductDaoMemory.cs:line 56
+   at System.Linq.Enumerable.WhereListIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 49
+2022-06-30 11:18:04.742 +02:00 [ERR] Something went wrong :(
+System.InvalidCastException: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at System.Data.DataReaderExtensions.GetInt32(DbDataReader reader, String name)
+   at Codecool.CodecoolShop.Daos.Implementations.ProductDaoMemory.GetBy(Genre genre) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\ProductDaoMemory.cs:line 231
+   at Codecool.CodecoolShop.Services.ProductService.GetProductsForCategory(Int32 categoryId) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 35
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 49
+2022-06-30 11:18:47.362 +02:00 [ERR] Something went wrong :(
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Int16'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int16()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt16(Int32 i)
+   at System.Data.DataReaderExtensions.GetInt16(DbDataReader reader, String name)
+   at Codecool.CodecoolShop.Daos.Implementations.ProductDaoMemory.GetBy(Genre genre) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Daos\Implementations\ProductDaoMemory.cs:line 226
+   at Codecool.CodecoolShop.Services.ProductService.GetProductsForCategory(Int32 categoryId) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 35
+   at Codecool.CodecoolShop.Controllers.ProductController.Index(String filter, Int32 id) in C:\Users\diene\Documents\Projects\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\ProductController.cs:line 49

@@ -1,0 +1,4 @@
+2022-06-28 14:22:41.761 +02:00 [ERR] no pay
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Codecool.CodecoolShop.Services.ProductService.GetOrder(Int32 id) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Services\ProductService.cs:line 72
+   at Codecool.CodecoolShop.Controllers.OrderController.Payment(Int32 orderId) in C:\Users\Kzs\source\repos\CodecoolGlobal\codecool-shop-2-csharp-dalmacsernok\src\Codecool.CodecoolShop\Controllers\OrderController.cs:line 170
